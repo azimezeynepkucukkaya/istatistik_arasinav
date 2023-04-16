@@ -1,0 +1,181 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  12pt,
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslentryspacingunit} % times entry-spacing
+\setlength{\cslentryspacingunit}{\parskip}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+  \let\oldpar\par
+  \def\par{\hangindent=\cslhangindent\oldpar}
+  \fi
+  % set entry spacing
+  \setlength{\parskip}{#2\cslentryspacingunit}
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+\usepackage{polyglossia}
+\setmainlanguage{turkish}
+\usepackage{booktabs}
+\usepackage{caption}
+\captionsetup[table]{skip=10pt}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Kahve Tüketiminin İnsan Sağlığı Üzerindeki Etkileri},
+  pdfauthor={Azime Zeynep Küçükkaya},
+  colorlinks=true,
+  linkcolor={Maroon},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Kahve Tüketiminin İnsan Sağlığı Üzerindeki Etkileri}
+\author{Azime Zeynep Küçükkaya\footnote{19080233, \href{https://github.com/azimezeynepkucukkaya/istatistik_arasinav.git}{Github Repo}}}
+\date{}
+
+\begin{document}
+\maketitle
+
+\hypertarget{giriux15f}{%
+\section{Giriş}\label{giriux15f}}
+
+Starbucks'ta bulunan sade kahve, sütlü kahve ve tatlandırıcılı kahve çeşitleri üzerine yapılan araştırmalar, kahve tüketiminin insan sağlığı üzerindeki etkilerini incelemiştir. Kahvenin kalp sağlığı üzerindeki olumlu etkileri, özellikle kafeinin etkisi ile ilişkilendirilmektedir.(\protect\hyperlink{ref-christensen2001abstention}{Christensen vd., 2001}) Kahve, antioksidan özellikleri sayesinde serbest radikallerle savaşarak kanser riskini azaltabilir. Ayrıca, düzenli kahve tüketiminin Tip 2 Diyabet ve Alzheimer gibi hastalıkların riskini de azaltabileceği düşünülmektedir.(\protect\hyperlink{ref-amorim1977coffee}{AMORIM ve AMORIM, 1977})
+
+Sütlü, kremalı ve şekerli kahve tüketimi ise sağlık açısından riskler taşıyabilir. Bu tür kahveler, yüksek miktarda şeker ve kalori içerirler ve aşırı tüketildiğinde kilo alımına ve diğer sağlık sorunlarına neden olabilirler. Ayrıca, bu tür kahveler kolesterol ve doymuş yağ gibi zararlı bileşenler de içerebilirler.
+
+Bir araştırmada, Starbucks kahve çeşitleri arasında en sağlıklı seçenekleri belirlemek için bir sağlık indeksi kullanılmıştır. (\protect\hyperlink{ref-koch2019starbucks}{Koch, 2019})Bu indeks, doymuş yağ, kolesterol, sodyum, karbonhidrat, diyet lifi, şeker, protein ve kafein gibi farklı değişkenleri içerir ve her değişken bir ağırlık katsayısı ile değerlendirilmiştir. Buna göre, en yüksek sağlık indeksine sahip olan içecekler, kalp hastalığına karşı en faydalı olanlar olarak belirlenmiştir.(\protect\hyperlink{ref-wustarbucks}{Wu, t.y.})
+
+Sonuç olarak, sade kahve, sütlü kahve ve tatlandırıcılı kahveler farklı sağlık etkilerine sahip olabilirler. Kahve tüketiminin kalp sağlığına olan faydaları, kafein ve antioksidan bileşenlerinden kaynaklanırken, şekerli ve kremalı kahveler yüksek kalori ve şeker içeriği nedeniyle sağlık açısından risk taşırlar. Tüketilen kahve miktarı ve çeşidi, sağlık açısından önemlidir ve dengeli bir diyet ve yaşam tarzı ile birlikte tüketildiğinde kahve sağlıklı bir içecek olabilir.
+
+\hypertarget{uxe7alux131ux15fmanux131n-amacux131}{%
+\subsection{Çalışmanın Amacı}\label{uxe7alux131ux15fmanux131n-amacux131}}
+
+Bu çalışmada Starbucks verilerini kullanarak kahve çeşitlerinin besin değerlerini baz alıp kahve tüketiminin insan sağlığı üzerindeki etkilerini incelemek hedeflenmiştir.
+
+\hypertarget{literatuxfcr}{%
+\subsection{Literatür}\label{literatuxfcr}}
+
+Kahve, kahve çekirdeklerinin öğütülmesiyle yapılan ve genellikle sıcak olarak içilen bir içecektir. Kahve, kafein içerir ve uyarıcı bir etkiye sahiptir. (\protect\hyperlink{ref-mccusker2006caffeine}{McCusker vd., 2006}) Standart bir bardak (240 ml) kahve, sıfır ya da çok az kalori içerir. Yaklaşık olarak 2 kalori içerebilir. Ancak, kahveye eklenen süt, şeker veya tatlandırıcılar gibi ek malzemeler kalori içeriğini artırabilir. Örneğin, bir bardak (240 ml) sade kahveye 1 çorba kaşığı (15 ml) süt ve 1 tatlı kaşığı (4 gram) şeker eklediğinizde yaklaşık 30-40 kalori eklenir.
+Sütlü, tatlandırıcılı ve kremalı kahveler, genellikle daha yüksek kalori içerirler. Kahve zincirleri tarafından satılan bazı popüler kahve çeşitleri ve yaklaşık kalori miktarları aşağıdaki gibidir:
+
+Latte (1 su bardağı, 240 ml): Yaklaşık 120-180 kalori
+Cappuccino (1 su bardağı, 240 ml): Yaklaşık 80-120 kalori
+Mocha (1 su bardağı, 240 ml): Yaklaşık 230-360 kalori
+Frappuccino (1 su bardağı, 240 ml): Yaklaşık 200-500 kalori (\protect\hyperlink{ref-koch2019starbucks}{Koch, 2019})
+Kahve tüketiminin insan sağlığı üzerindeki etkileri konusunda birçok çalışma yapılmıştır ve birçok farklı sonuçlar elde edilmiştir. Bazı araştırmalar, düzenli kahve tüketiminin bazı faydaları olduğunu göstermektedir, ancak diğer çalışmalar kahvenin olumsuz etkilerine de dikkat çekmektedir.
+Sütlü, kremalı ve şekerli kahveler, kahve tüketimine ek olarak ekstra kalori, yağ ve şeker içerebilirler. Bu nedenle, sütlü, kremalı ve şekerli kahveler tüketmek, insan sağlığı üzerinde olumsuz etkilere sahip olabilir. Kahvelerin yüksek kalori, şeker ve yağ içeriği nedeniyle aşırı tüketiminin obezite, kalp hastalıkları, diyabet ve diğer sağlık sorunları gibi bir dizi sağlık riski ile ilişkili olabileceği unutulmamalıdır.(\protect\hyperlink{ref-ouguz2016kahve}{Oğuz vd., 2016})
+Bazı araştırmalar da, düzenli kahve tüketiminin bazı faydaları olduğunu göstermektedir. Kahve tüketimi ile kalp hastalıkları ve inme riski arasında herhangi bir ilişki bulunamamıştır. Ayrıca, kahve tüketiminin diyabet ve Parkinson hastalığı riskini azalttığı görülmüştür.(\protect\hyperlink{ref-isogawa2003coffee}{Isogawa vd., 2003}) Ayrıca sağlıklı genç erkekler üzerinde yapılan bir deneyde, kahve tüketiminin enerji harcamasını artırdığı ve yağ oksidasyonunu (yağların enerji olarak kullanımı) artırdığı bulunmuştur. Ayrıca, kahve tüketiminin mide boşalmasını ve ince bağırsak hareketliliğini hızlandırdığı görülmüştür.(\protect\hyperlink{ref-acheson1980caffeine}{Acheson vd., 1980})
+Başka bir araştırmada da doymuş yağ, kolesterol, sodyum, karbonhidrat, diyet lifi, şeker, protein ve kafein gibi farklı değişkenleri dikkate alan bir sağlık indeksi oluşturulmuştur. Her değişkene bir ağırlık katsayısı atanmıştır. Zararlı faktörlere daha düşük, faydalı olanlara ise daha yüksek katsayılar verilmiştir. Bu nedenle, en yüksek sağlık indeksine sahip içecekler kardiyovasküler hastalık (KVH) önlemede en faydalı olanlar olarak belirlenmiştir.(\protect\hyperlink{ref-wustarbucks}{Wu, t.y.})
+
+\newpage
+
+\hypertarget{references}{%
+\section{Kaynakça}\label{references}}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{1}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-acheson1980caffeine}{}}%
+Acheson, K. J., Zahorska-Markiewicz, B., Pittet, P., Anantharaman, K. ve Jéquier, E. (1980). Caffeine and coffee: their influence on metabolic rate and substrate utilization in normal weight and obese individuals. \emph{The American journal of clinical nutrition}, \emph{33}(5), 989-997.
+
+\leavevmode\vadjust pre{\hypertarget{ref-amorim1977coffee}{}}%
+AMORIM, H. V. ve AMORIM, V. L. (1977). Coffee enzymes and coffee quality. ACS Publications.
+
+\leavevmode\vadjust pre{\hypertarget{ref-christensen2001abstention}{}}%
+Christensen, B., Mosdol, A., Retterstol, L., Landaas, S. ve Thelle, D. S. (2001). Abstention from filtered coffee reduces the concentrations of plasma homocysteine and serum cholesterol---a randomized controlled trial. \emph{The American journal of clinical nutrition}, \emph{74}(3), 302-307.
+
+\leavevmode\vadjust pre{\hypertarget{ref-isogawa2003coffee}{}}%
+Isogawa, A., Noda, M., Takahashi, Y., Kadowaki, T. ve Tsugane, S. (2003). Coffee consumption and risk of type 2 diabetes mellitus. \emph{The Lancet}, \emph{361}(9358), 703-704.
+
+\leavevmode\vadjust pre{\hypertarget{ref-koch2019starbucks}{}}%
+Koch, L. (2019). Starbucks Espresso Drinks: More Than the Average Cup of Joe. \emph{Journal of Renal Nutrition}, \emph{29}(1), e1-e4.
+
+\leavevmode\vadjust pre{\hypertarget{ref-mccusker2006caffeine}{}}%
+McCusker, R. R., Fuehrlein, B., Goldberger, B. A., Gold, M. S. ve Cone, E. J. (2006). Caffeine content of decaffeinated coffee. \emph{Journal of Analytical Toxicology}, \emph{30}(8), 611-613.
+
+\leavevmode\vadjust pre{\hypertarget{ref-ouguz2016kahve}{}}%
+Oğuz, S., Erdoğan, Z., vd. (2016). Kahve t{ü}ketiminin kalp sa{ğ}l{ı}{ğ}{ı} {ü}zerine etkisi. \emph{Journal of Cardiovascular Nursing}, \emph{7}(14), 136-139.
+
+\leavevmode\vadjust pre{\hypertarget{ref-wustarbucks}{}}%
+Wu, A. (t.y.). Starbucks Coffee Statistical Analysis.
+
+\end{CSLReferences}
+
+\end{document}

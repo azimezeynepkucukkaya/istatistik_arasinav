@@ -1,0 +1,73 @@
+---
+title: "Kahve Tüketiminin İnsan Sağlığı Üzerindeki Etkileri"
+author: 
+  - Azime Zeynep Küçükkaya[^1]
+bibliography: ../bibliography/biblio.bib
+csl: ../csl/apa-tr.csl
+header-includes:
+  - \usepackage{polyglossia}
+  - \setmainlanguage{turkish}
+  - \usepackage{booktabs}
+  - \usepackage{caption} 
+  - \captionsetup[table]{skip=10pt}
+output:
+  bookdown::pdf_document2:
+    fig_caption: yes
+    fig_height: 3
+    fig_width: 4
+    keep_tex: no
+    latex_engine: xelatex
+    number_sections: yes
+    toc: no
+geometry: margin=1in
+link-citations: yes
+urlcolor: blue
+fontsize: 12pt
+biblio-style: apalike
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+<!-- ======================================================================= -->
+<!-- ============================== NOTLAR ================================= -->
+<!-- ======================================================================= -->
+[^1]: 19080233, [Github Repo](https://github.com/azimezeynepkucukkaya/istatistik_arasinav.git)
+
+
+# Giriş
+Starbucks'ta bulunan sade kahve, sütlü kahve ve tatlandırıcılı kahve çeşitleri üzerine yapılan araştırmalar, kahve tüketiminin insan sağlığı üzerindeki etkilerini incelemiştir. Kahvenin kalp sağlığı üzerindeki olumlu etkileri, özellikle kafeinin etkisi ile ilişkilendirilmektedir.[@christensen2001abstention] Kahve, antioksidan özellikleri sayesinde serbest radikallerle savaşarak kanser riskini azaltabilir. Ayrıca, düzenli kahve tüketiminin Tip 2 Diyabet ve Alzheimer gibi hastalıkların riskini de azaltabileceği düşünülmektedir.[@amorim1977coffee]
+
+Sütlü, kremalı ve şekerli kahve tüketimi ise sağlık açısından riskler taşıyabilir. Bu tür kahveler, yüksek miktarda şeker ve kalori içerirler ve aşırı tüketildiğinde kilo alımına ve diğer sağlık sorunlarına neden olabilirler. Ayrıca, bu tür kahveler kolesterol ve doymuş yağ gibi zararlı bileşenler de içerebilirler.
+
+Bir araştırmada, Starbucks kahve çeşitleri arasında en sağlıklı seçenekleri belirlemek için bir sağlık indeksi kullanılmıştır. [@koch2019starbucks]Bu indeks, doymuş yağ, kolesterol, sodyum, karbonhidrat, diyet lifi, şeker, protein ve kafein gibi farklı değişkenleri içerir ve her değişken bir ağırlık katsayısı ile değerlendirilmiştir. Buna göre, en yüksek sağlık indeksine sahip olan içecekler, kalp hastalığına karşı en faydalı olanlar olarak belirlenmiştir.[@wustarbucks]
+
+Sonuç olarak, sade kahve, sütlü kahve ve tatlandırıcılı kahveler farklı sağlık etkilerine sahip olabilirler. Kahve tüketiminin kalp sağlığına olan faydaları, kafein ve antioksidan bileşenlerinden kaynaklanırken, şekerli ve kremalı kahveler yüksek kalori ve şeker içeriği nedeniyle sağlık açısından risk taşırlar. Tüketilen kahve miktarı ve çeşidi, sağlık açısından önemlidir ve dengeli bir diyet ve yaşam tarzı ile birlikte tüketildiğinde kahve sağlıklı bir içecek olabilir.
+
+
+
+## Çalışmanın Amacı
+Bu çalışmada Starbucks verilerini kullanarak kahve çeşitlerinin besin değerlerini baz alıp kahve tüketiminin insan sağlığı üzerindeki etkilerini incelemek hedeflenmiştir.
+
+
+
+## Literatür 
+Kahve, kahve çekirdeklerinin öğütülmesiyle yapılan ve genellikle sıcak olarak içilen bir içecektir. Kahve, kafein içerir ve uyarıcı bir etkiye sahiptir. [@mccusker2006caffeine] Standart bir bardak (240 ml) kahve, sıfır ya da çok az kalori içerir. Yaklaşık olarak 2 kalori içerebilir. Ancak, kahveye eklenen süt, şeker veya tatlandırıcılar gibi ek malzemeler kalori içeriğini artırabilir. Örneğin, bir bardak (240 ml) sade kahveye 1 çorba kaşığı (15 ml) süt ve 1 tatlı kaşığı (4 gram) şeker eklediğinizde yaklaşık 30-40 kalori eklenir. 
+Sütlü, tatlandırıcılı ve kremalı kahveler, genellikle daha yüksek kalori içerirler. Kahve zincirleri tarafından satılan bazı popüler kahve çeşitleri ve yaklaşık kalori miktarları aşağıdaki gibidir:
+
+Latte (1 su bardağı, 240 ml): Yaklaşık 120-180 kalori
+Cappuccino (1 su bardağı, 240 ml): Yaklaşık 80-120 kalori
+Mocha (1 su bardağı, 240 ml): Yaklaşık 230-360 kalori
+Frappuccino (1 su bardağı, 240 ml): Yaklaşık 200-500 kalori [@koch2019starbucks]
+Kahve tüketiminin insan sağlığı üzerindeki etkileri konusunda birçok çalışma yapılmıştır ve birçok farklı sonuçlar elde edilmiştir. Bazı araştırmalar, düzenli kahve tüketiminin bazı faydaları olduğunu göstermektedir, ancak diğer çalışmalar kahvenin olumsuz etkilerine de dikkat çekmektedir.
+Sütlü, kremalı ve şekerli kahveler, kahve tüketimine ek olarak ekstra kalori, yağ ve şeker içerebilirler. Bu nedenle, sütlü, kremalı ve şekerli kahveler tüketmek, insan sağlığı üzerinde olumsuz etkilere sahip olabilir. Kahvelerin yüksek kalori, şeker ve yağ içeriği nedeniyle aşırı tüketiminin obezite, kalp hastalıkları, diyabet ve diğer sağlık sorunları gibi bir dizi sağlık riski ile ilişkili olabileceği unutulmamalıdır.[@ouguz2016kahve]
+Bazı araştırmalar da, düzenli kahve tüketiminin bazı faydaları olduğunu göstermektedir. Kahve tüketimi ile kalp hastalıkları ve inme riski arasında herhangi bir ilişki bulunamamıştır. Ayrıca, kahve tüketiminin diyabet ve Parkinson hastalığı riskini azalttığı görülmüştür.[@isogawa2003coffee] Ayrıca sağlıklı genç erkekler üzerinde yapılan bir deneyde, kahve tüketiminin enerji harcamasını artırdığı ve yağ oksidasyonunu (yağların enerji olarak kullanımı) artırdığı bulunmuştur. Ayrıca, kahve tüketiminin mide boşalmasını ve ince bağırsak hareketliliğini hızlandırdığı görülmüştür.[@acheson1980caffeine] 
+Başka bir araştırmada da doymuş yağ, kolesterol, sodyum, karbonhidrat, diyet lifi, şeker, protein ve kafein gibi farklı değişkenleri dikkate alan bir sağlık indeksi oluşturulmuştur. Her değişkene bir ağırlık katsayısı atanmıştır. Zararlı faktörlere daha düşük, faydalı olanlara ise daha yüksek katsayılar verilmiştir. Bu nedenle, en yüksek sağlık indeksine sahip içecekler kardiyovasküler hastalık (KVH)  önlemede en faydalı olanlar olarak belirlenmiştir.[@wustarbucks]
+
+
+
+
+\newpage
+# Kaynakça {#references}
+<div id="refs"></div>
+
